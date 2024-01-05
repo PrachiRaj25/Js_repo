@@ -37,3 +37,26 @@ function Difference(hoisting_var, hoisting_let,hoisting_const,scope_var,scope_le
   const Difference123 = new Difference(" hosted at the top of global scope and can be used before declaration", " hosted at the top of some private scope and only available ater assigning value and cannot be used before declaration"," hosted at the top of some private scope and only available ater assigning value and cannot be used before declaration","Global scope","block scope(start to end of th current scope)","block scope","Yes we can redeclare in the same scope","No we cannot redeclare in the same scope","No we can not redeclare in the same scope");
   
   console.table(Difference123);
+
+  //Hoisting 
+  //Js engine read the whole code and take all variables and assign memory for them and give them a value that is undefined and host all of them at the top of the environment. This is known as Hoisting.
+  
+  //example 1
+  var a ;
+ let b;
+ console.log('Value of var' ,a);
+ console.log('Value of let', b);
+ //output
+ // "Value of var" undefined
+ //  "Value of let" undefined
+
+ //example 2
+
+ console.log('Value of var' ,a);
+ console.log('Value of let', b1);
+ var a;
+ let b1;
+ //output
+//  "Value of var" undefined
+//  "error"
+//  "ReferenceError: Cannot access 'b' before initialization"
