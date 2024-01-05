@@ -39,7 +39,8 @@ function Difference(hoisting_var, hoisting_let,hoisting_const,scope_var,scope_le
   console.table(Difference123);
 
   //Hoisting 
-  //Js engine read the whole code and take all variables and assign memory for them and give them a value that is undefined and host all of them at the top of the environment. This is known as Hoisting.
+  //Js engine read the whole code and take all variables and assign memory for them and 
+//give them a value that is undefined and host all of them at the top of the environment. This is known as Hoisting.
   
   //example 1
   var a ;
